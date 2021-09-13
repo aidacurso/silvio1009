@@ -26,8 +26,8 @@ namespace questao4
             Console.WriteLine("├────────────────────────────────────────────────────────┤");
             Console.WriteLine("│ digite 1 para inserir dados                            │");
             Console.WriteLine("│ digite 2 para listar dados                             │");
-            Console.WriteLine("│ digite 3 para vizualizar soma dos valores inseridos    │");
-            Console.WriteLine("│ digite 4 para vizualizar a média dos valores inseridos │");
+            Console.WriteLine("│ digite 3 para visualizar soma dos valores inseridos    │");
+            Console.WriteLine("│ digite 4 para visualizar a média dos valores inseridos │");
             Console.WriteLine("│ digite 9 para finalizar o programa                     │");
             Console.WriteLine("└────────────────────────────────────────────────────────┘");
             menu = int.Parse(Console.ReadLine());
