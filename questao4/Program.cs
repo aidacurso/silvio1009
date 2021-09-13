@@ -21,22 +21,28 @@ namespace questao4
         static List<string> nomes = new List<string>();
         static void Menu()
         {
-            Console.WriteLine("\n digite 1 para inserir dados" +
-                "\ndigite 2 para listar dados" +
-                "\ndigite 3 para vizualizar soma dos valores inseridos" +
-                "\ndigite 4 para vizualizar a média dos valores inseridos" +
-                "\ndigite 9 para finalizar o programa");
+            Console.WriteLine("\n┌────────────────────────────────────────────────────────┐");
+            Console.WriteLine("│                          MENU                          │");
+            Console.WriteLine("├────────────────────────────────────────────────────────┤");
+            Console.WriteLine("│ digite 1 para inserir dados                            │");
+            Console.WriteLine("│ digite 2 para listar dados                             │");
+            Console.WriteLine("│ digite 3 para vizualizar soma dos valores inseridos    │");
+            Console.WriteLine("│ digite 4 para vizualizar a média dos valores inseridos │");
+            Console.WriteLine("│ digite 9 para finalizar o programa                     │");
+            Console.WriteLine("└────────────────────────────────────────────────────────┘");
             menu = int.Parse(Console.ReadLine());
         }
 
         static void Inserir()
         {
+            Console.Clear();
             Console.WriteLine("digite a quantidade de produtos que deseja cadastrar.");
             x = int.Parse(Console.ReadLine());
 
 
             for (int i = 0; i < x; i++)
             {
+                Console.Clear();
                 Console.WriteLine($"digite o nome do {i + 1}º produto.");
                 nomes.Add(Console.ReadLine());
 
@@ -59,15 +65,19 @@ namespace questao4
         }
         static void Somar()
         {
+            Console.Clear();
             Console.WriteLine($"a soma do valor de todos os produtos é de R${soma}.");
         }
         static void Media()
         {
+            Console.Clear();
             Console.WriteLine($"a média dos valores dos produtos é de R${soma / x}");
         }
         static bool Finalizar()
         {
+            Console.Clear();
             return false;
+            Console.ReadKey();
         }
 
         static void Main(string[] args)
